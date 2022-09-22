@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{% static 'css/app.css' %}" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/
+Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans&display=swap"
+        rel="stylesheet" />
+    <title>NFTopia</title>
+</head>
+
+<body>
+    <img src="{% static 'img/1_nftopia.png' %}" id="nftopia_img" />
+    <!-- <h1>NFTopia</h1> -->
+    <!-- 헤더바 -->
+    <div>
+        <ul>
+        <li><a href="#main_title" class="nav" id="a_nftopia">NFTopia</a></li>
+        <li><a href="#def_title" class="nav" id="a_def">NFT</a></li>
+        <li><a href="#minting_title" class="nav" id="a_minting">Minting</a></li>
+        <li><a href="#kindOf_title" class="nav" id="a_kindOf">Kind of</a></li>
+        <li><a href="#value_title" class="nav" id="a_value">Value</a></li>
+        <li><a href="#howTo_title" class="nav" id="a_howTo">How to?</a></li>
+        <li><a href="{% url 'gallery' %}" class="nav" id="a_gallery">Gallery</a></li>
+        <li><a href="{% url 'login' %}" class="nav" id="a_login">Sign in</a></li>
+        </ul>
+    </div>
+
+        <!-- NFT 설명 -->
+        <div id="fullpage" >
+            <!-- NFTopia 소개 -->
+            <div id="nftopia" class="section">
+                <p id="main_title">NFTopia</p>
+                <p id="main_detail">
+                    말로만 듣던 NFT, 직접 해보긴 망설여지셨나요? <br />
+                    NFTopia에서 배우는 실전 NFT 개념부터 민팅까지 !
+                </p>
+                <a href="https://nagiri1084.itch.io/nftopia" target="_self">
+                    <img src="{% static 'img/playButton.png' %}" id="playButton" alt="플레이 버튼" />
+                </a>
+            </div>
+
+            <!-- NFT 정의 -->
+            <div id="def" class="section">
+                <img src="{% static 'img/2_non-fungible.png' %}" id="non-fungible_img" />
+                <p id="def_title">Non-Fungible Token</p>
+                <p id="def_detail">대체 불가능한 고유한 자산</p>
+            </div>
+            <div id="def2" class="section">
+                <img src="{% static 'img/3_boogi.png'%}" id="boogi_img" />
+                <p id="def_detail2">
+                    <span>원본 작품</span>
+                    <br />≠<br />원본 작품을
+                    <span>촬영한 사진</span>
+                </p>
+                <img src="{% static 'img/4_boogi_pic.png'%}" id="boogi2_img" />
+            </div>
+            <div id="def3" class="section">
+                <p id="def_subTitle">
+                    "원본의 가치는 그 어떤 것으로도 대체할 수 없다"
+                </p>
+                <img src="{% static 'img/nft_def.png'%}" id="nft_def_img" />
+            </div>
+
+            <!-- NFT 민팅 -->
+            <div id="minting" class="section">
+                <img src="{% static 'img/5_minting.png'%}" id="minting_img" />
+                <p id="minting_title">Minting</p>
+                <p id="minting_detail">
+                    <span>Mint(주조하다)</span> + ing 의 합성어 <br />
+                    즉, <span>디지털 자산(가상 화폐)</span>을 대체 불가능한
+                    고유한 자산인 <span>NFT</span>로 만들어내는 것
+                </p>
+            </div>
+
+            <!-- NFT 종류 -->
+            <div id="kindOf" class="section">
+                <p id="kindOf_title">Kind Of</p>
+                <img src="{% static 'img/6_kind1.png'%}" id="kind1_img" />
+                <p id="kind1">디지털 아트</p>
+                <img src="{% static 'img/7_kind2.png'%}" id="kind2_img" />
+                <p id="kind2">스포츠 모먼트</p>
+                <img src="{% static 'img/8_kind3.png'%}" id="kind3_img" />
+                <p id="kind3">P2E 게임</p>
+                <img src="{% static 'img/9_kind4.png'%}" id="kind4_img" />
+                <p id="kind4">가상 부동산</p>
+            </div>
+
+            <!-- NFT 가치 -->
+            <div id="value" class="section">
+                <p id="value_title">Value</p>
+                <p id="check1">
+                    <img src="{% static 'img/check.png'%}" id="check_img1" />
+                    <span>언제 어디서든</span> 가능한 현금화 <br />
+                </p>
+                <p id="check2">
+                    <img src="{% static 'img/check.png'%}" id="check_img2" />
+                    온라인을 이용한 <span>낮은 진입 장벽</span>
+                </p>
+                <p id="check3">
+                    <img src="{% static 'img/check.png'%}" id="check_img3" />
+                    크리에이터와 소비자에게 <span>새로운 시장</span> 제공
+                </p>
+            </div>
+
+            <!-- 마켓플레이스 & 블록체인 지갑 -->
+            <div id="howTo" class="section">
+                <p id="howTo_title">How To NFT?</p>
+                <p id="howTo_subTitle1">블록체인 지갑</p>
+                    <a href="https://metamask.io/" target="_blank">
+                    <img src="{% static 'img/10_wallet1.png'%}" id="wallet1_img">
+                    </a>
+                    <p id="wallet1">메타마스크</p>
+                
+                    <img src="{% static 'img/11_wallet2.png'%}" id="wallet2_img">
+                    <p id="wallet2">카이카스</p>
+                    <a href="https://phantom.app/" target="_blank">
+                    <img src="{% static 'img/12_wallet3.png'%}" id="wallet3_img"></a>
+                    <p id="wallet3">팬텀</p>
+                    
+                
+                <p id="howTo_subTitle2">마켓 플레이스
+                    <a href="https://crypto.com/" target="_blank">
+                    <img src="{% static 'img/13_marketplace1.png'%}" id="mp1_img"></a>
+                    <p id="mp1">크립토닷컴</p>
+                    <a href="https://www.coinbase.com/" target="_blank">
+                        <img src="{% static 'img/14_marketplace2.png'%}" id="mp2_img"></a>
+                    <p id="mp2">코인베이스</p>
+                    <a href="https://opensea.io/" target="_blank">
+                    <img src="{% static 'img/15_marketplace3.png'%}" id="mp3_img"></a>
+                    <p id="mp3">오픈씨</p>
+                    <a href="https://www.binance.com/en" target="_blank">
+                    <img src="{% static 'img/16_marketplace4.png'%}" id="mp4_img"></a>
+                    <p id="mp4">바이낸스</p>
+                </p>
+            </div>
+            <!-- GALLERY -->
+            <div class="section">
+                <a href="{% url 'gallery' %}" id="gallery_title">GALLERY</a>
+                <img src="{% static 'img/18_gallery_line.png'%}" id="gallery_line"/>
+                <!-- 최신 사진 5개 불러오기 -->
+                <div class="container">
+                    {% for post in posts reversed %}
+                    <div class="row">
+                        <a href="{% url 'gallery' %}">
+                            <img src="{{ post.photo.url }}" class="col" alt="최신 사진">
+                            <a class="nickname_hover" href="">{{post.nickname}}<br />{{post.date}}</a>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="https://nagiri1084.itch.io/nftopia" target="_self" class="section">
+                <img src="{% static 'img/17_playButton.png'%}" id="playButton2"/>
+            </a>
+        </div>
+    </body>
+    <footer>
+        <div id="footer">
+            <p id="f_title">제 18회 한성공학경진대회 NFTOPIA</p>
+            <div id="gr">
+                <img src="{% static 'img/giri.png' %}" class="profile">
+                <p>나기리<br>(디지털콘텐츠가상현실/<br>웹 공학트랙 19)</p>
+            </div>
+            <div id="ja">
+                <img src="{% static 'img/jua.png' %}" class="profile">
+                <p>오주아<br>(웹 공학/<br>빅데이터트랙 20)</p>
+            </div>
+            <div id="jm">
+                <img src="{% static 'img/jamin.png' %}" class="profile">
+                <p>이자민<br>(디지털콘텐츠가상현실/<br>모바일소프트웨어트랙 20)</p>
+            </div>
+            <div id="jh">
+                <img src="{% static 'img/jangh.png' %}" class="profile">
+                <p>이장혁<br>(웹 공학트랙/<br>디지털콘텐츠가상현실 18)</p>
+            </div>
+        </div>
+    </footer>
+</html>

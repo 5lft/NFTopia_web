@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="{% static 'css/upload.css' %}"
+            type="text/css"
+            rel="stylesheet"
+        />
+        <link
+            href="{% static 'css/gallery.css' %}"
+            type="text/css"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/
+bootstrap/4.1.2/css/bootstrap.min.css"
+            integrity="sha384-Smlep5jCw/wG7hdkwQ/
+Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <title>NFTopia</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Upload</h1>
+            <div style="margin-top: 5rem; margin-bottom: 5rem">
+                <a href="{% url 'home' %}" class="nav" id="a_nftopia"
+                    >NFTopia</a
+                >
+                <a href="#def_title" class="nav" id="a_def">NFT</a>
+                <a href="#minting_title" class="nav" id="a_minting">Minting</a>
+                <a href="#kindOf_title" class="nav" id="a_kindOf">Kind of</a>
+                <a href="#value_title" class="nav" id="a_value">Value</a>
+                <a href="#howTo_title" class="nav" id="a_howTo">How to?</a>
+                <a href="{% url 'gallery' %}" class="nav" id="a_gallery"
+                    >Gallery</a
+                >
+            </div>
+        </div>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {%csrf_token%}
+            <section id="form">
+                <div class="image">
+                    <p>Image</p>
+                    <label class="upload-img" for="imagefile"> </label>
+                    {{ form.photo }}
+                </div>
+                <div class="submit_btn">
+                    <input type="submit" value="Upload" />
+                </div>
+            </section>
+        </form>
+    </body>
+</html>

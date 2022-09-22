@@ -1,0 +1,117 @@
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: "Fira Sans";
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.nav {
+    position: absolute;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 10rem;
+    height: 3rem;
+    top: 2.4rem;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration: none;
+
+    /* White */
+    color: #333333;
+    margin-top: 50px;
+}
+#a_nftopia {
+    left: 30rem;
+    font-weight: 700;
+}
+
+#a_def {
+    left: 47rem;
+}
+#a_minting {
+    left: 63rem;
+}
+
+#a_kindOf {
+    left: 80rem;
+}
+#a_value {
+    left: 100rem;
+}
+#a_howTo {
+    left: 116rem;
+}
+#a_gallery {
+    left: 135rem;
+}
+#a_login {
+    left: 163rem;
+}
+
+
+.btn {
+    background-color: aliceblue;
+    font-family: "Fira Sans";
+    width: 1000px;
+    font-size: 15px;
+    margin: auto;
+    display: block;
+    /* margin: auto; */
+    /* place-content: center;
+    place-items: center; */
+}
+
+.wrap {
+    display: grid;
+    /* grid-template-columns: 3fr 3fr 3fr;  */
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-gap: 2rem;
+    place-content: center;
+    place-items: center;
+    /* min-height: 100vh; */
+    /* max-height: 80%; */
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrap div {
+    position: relative;
+}
+
+.wrap .nickname_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(36, 35, 35, 0.4);
+
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+}
+
+.nickname_hover:hover {
+    opacity: 1;
+}

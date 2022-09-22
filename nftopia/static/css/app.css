@@ -1,0 +1,696 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+h1 {
+    font-family: "Fira Sans";
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.nav {
+    position: absolute;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 10rem;
+    height: 3rem;
+    top: 2.4rem;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration: none;
+
+    /* White */
+    color: #ffffff;
+}
+.nav:hover {
+    text-decoration: underline;
+}
+
+#a_nftopia {
+    left: 30rem;
+    font-weight: 700;
+}
+
+#a_def {
+    left: 47rem;
+}
+#a_minting {
+    left: 63rem;
+}
+
+#a_kindOf {
+    left: 80rem;
+}
+#a_value {
+    left: 98rem;
+}
+#a_howTo {
+    left: 116rem;
+}
+#a_gallery {
+    left: 135rem;
+}
+#a_login {
+    left: 163rem;
+}
+
+#main_title {
+    position: absolute;
+    width: 47.5rem;
+    height: 16.5rem;
+    left: 72.2rem;
+    top: 20rem;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 15rem;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.5rem;
+
+    color: #ffffff;
+
+    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+#main_detail {
+    position: absolute;
+    width: 73rem;
+    height: 9.6rem;
+    left: 62.7rem;
+    top: 49.2rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 8.5rem;
+
+    text-align: center;
+
+    /* White */
+
+    color: #ffffff;
+
+    text-shadow: -0.19rem 0.25rem 0.25rem rgba(0, 0, 0, 0.4);
+}
+#playButton {
+    position: absolute;
+    width: 30rem;
+    height: 16rem;
+    left: 121rem;
+    top: 79rem;
+
+    border: 0;
+    outline: 0;
+    background: none;
+}
+#nftopia_img {
+    position: absolute;
+    width: 192rem;
+    height: 108rem;
+    left: 0rem;
+    top: 0rem;
+}
+#non-fungible_img {
+    position: absolute;
+    width: 83.5rem;
+    height: 97rem;
+    left: 20rem;
+    top: 116.8rem;
+}
+#def_title {
+    position: absolute;
+    width: 56.7rem;
+    height: 4rem;
+    left: 98.3rem;
+    top: 125rem;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 4rem;
+    /* identical to box height, or 62% */
+
+    color: #000000;
+}
+#def_detail {
+    position: absolute;
+    width: 30rem;
+    height: 4rem;
+    left: 98.3rem;
+    top: 140.3rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    /* identical to box height, or 167% */
+
+    color: #000000;
+}
+#boogi_img {
+    position: absolute;
+    width: 80rem;
+    height: 59rem;
+    left: 20.8rem;
+    top: 243.9rem;
+}
+#def_detail2 {
+    position: absolute;
+    width: 30rem;
+    height: 4rem;
+    left: 58rem;
+    top: 310rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    /* identical to box height, or 167% */
+
+    text-align: center;
+
+    color: #000000;
+}
+span {
+    font-weight: 700;
+}
+#boogi2_img {
+    position: absolute;
+    width: 60rem;
+    height: 38rem;
+    left: 108.6rem;
+    top: 300.8rem;
+}
+#def_subTitle {
+    position: absolute;
+    width: 80rem;
+    height: 4rem;
+    left: 55rem;
+    top: 377.9rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4rem;
+    /* identical to box height, or 111% */
+
+    text-align: center;
+
+    color: #000000;
+
+    /* shadow_Title */
+
+    text-shadow: rem 4px 1rem rgba(0, 0, 0, 0.2);
+}
+#nft_def_img {
+    position: absolute;
+    width: 57.7rem;
+    height: 11.4rem;
+    left: 64rem;
+    top: 410.1rem;
+}
+#minting_img {
+    position: absolute;
+    width: 51.6rem;
+    height: 57.5rem;
+    left: 69.1rem;
+    top: 484.9rem;
+}
+#minting_title {
+    position: absolute;
+    width: 21.8rem;
+    height: 8.8rem;
+    left: 83.9rem;
+    top: 498.8rem;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 8.8rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+#minting_detail {
+    position: absolute;
+    width: 102rem;
+    height: 27rem;
+    left: 43rem;
+    top: 516rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    /* or 167% */
+
+    text-align: center;
+
+    color: #000000;
+}
+#kind1_img {
+    position: absolute;
+    width: 40rem;
+    height: 25rem;
+    left: 47rem;
+    top: 611rem;
+}
+#kind2_img {
+    position: absolute;
+    width: 40rem;
+    height: 25rem;
+    left: 98rem;
+    top: 611rem;
+}
+#kind3_img {
+    position: absolute;
+    width: 40rem;
+    height: 25rem;
+    left: 47rem;
+    top: 645rem;
+}
+#kind4_img {
+    position: absolute;
+    width: 40rem;
+    height: 25rem;
+    left: 98rem;
+    top: 645rem;
+}
+#kind1 {
+    position: absolute;
+    width: 15rem;
+    height: 3rem;
+    left: 47rem;
+    top: 636rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    /* or 167% */
+
+    color: #000000;
+}
+#kind2 {
+    position: absolute;
+    width: 18rem;
+    height: 3rem;
+    left: 98rem;
+    top: 636rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    /* or 167% */
+
+    color: #000000;
+}
+#kind3 {
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+    left: 47rem;
+    top: 669rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    /* or 167% */
+
+    color: #000000;
+}
+#kind4 {
+    position: absolute;
+    width: 15rem;
+    height: 3rem;
+    left: 98rem;
+    top: 669rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    /* or 167% */
+
+    color: #000000;
+}
+#kindOf_title {
+    position: absolute;
+    width: 30rem;
+    height: 8rem;
+    left: 79rem;
+    top: 586rem;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 8rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+#value {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+#check1 {
+    position: absolute;
+    width: 40rem;
+    height: 4rem;
+    left: 75rem;
+    top: 735rem;
+}
+#check2 {
+    position: absolute;
+    width: 40rem;
+    height: 4rem;
+    left: 75rem;
+    top: 750rem;
+}
+#check3 {
+    position: absolute;
+    width: 60rem;
+    height: 4rem;
+    left: 75rem;
+    top: 765rem;
+}
+#value_title {
+    position: absolute;
+    width: 15rem;
+    height: 8rem;
+    left: 88rem;
+    top: 710rem;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 8.8rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+#howTo_title {
+    position: absolute;
+    width: 50rem;
+    height: 8rem;
+    left: 39rem;
+    top: 820rem;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 8.8rem;
+    /* identical to box height */
+
+    color: #000000;
+}
+#howTo_subTitle1 {
+    position: absolute;
+    width: 20rem;
+    height: 4rem;
+    left: 43rem;
+    top: 837rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    /* identical to box height, or 167% */
+
+    color: #000000;
+}
+#howTo {
+    position: relative;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    /* identical to box height, or 167% */
+
+    width: 192rem;
+    height: 80rem;
+    left: 0rem;
+
+    text-align: center;
+    color: #333333;
+}
+#wallet1_img {
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    left: 60.5rem;
+    top: 848rem;
+}
+
+#wallet1_img:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(36, 35, 35, 0.4);
+}
+#wallet2_img {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    left: 88rem;
+    top: 848rem;
+}
+#wallet3_img {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    left: 113rem;
+    top: 848rem;
+}
+#wallet1 {
+    position: absolute;
+    left: 65rem;
+    top: 864rem;
+}
+#wallet2 {
+    position: absolute;
+    left: 91rem;
+    top: 864rem;
+}
+#wallet3 {
+    position: absolute;
+    left: 118rem;
+    top: 864rem;
+}
+#howTo_subTitle2 {
+    position: absolute;
+    width: 20rem;
+    height: 4rem;
+    left: 43rem;
+    top: 877rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    /* identical to box height, or 167% */
+
+    color: #000000;
+}
+#mp1_img {
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    left: 13rem;
+    top: 8rem;
+}
+#mp2_img {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    left: 79rem;
+    top: 889rem;
+}
+#mp3_img {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    left: 100rem;
+    top: 889rem;
+}
+#mp4_img {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    left: 121rem;
+    top: 889rem;
+}
+#mp1 {
+    position: absolute;
+    left: 61rem;
+    top: 905rem;
+}
+#mp2 {
+    position: absolute;
+    left: 82rem;
+    top: 905rem;
+}
+#mp3 {
+    position: absolute;
+    left: 105rem;
+    top: 905rem;
+}
+#mp4 {
+    position: absolute;
+    left: 125rem;
+    top: 905rem;
+}
+#gallery_title {
+    position: absolute;
+    width: 20rem;
+    height: 8rem;
+    left: 40rem;
+    top: 955rem;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 8.8rem;
+    /* identical to box height */
+
+    text-decoration: none;
+
+    color: #000000;
+}
+#gallery_line {
+    position: absolute;
+    width: 27.3rem;
+    height: 4rem;
+    left: 45rem;
+    top: 960.5rem;
+}
+.container {
+    padding-top: 892rem;
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container img {
+    position: relative;
+    width: 26rem;
+    height: 26rem;
+    margin-right: 7rem;
+}
+.container div {
+    position: relative;
+}
+.container .nickname_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 79%;
+    background: rgba(36, 35, 35, 0.4);
+
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+}
+
+.nickname_hover:hover {
+    opacity: 1;
+}
+
+#playButton2 {
+    position: absolute;
+    width: 38rem;
+    height: 13.014rem;
+    left: 112rem;
+    top: 1090rem;
+
+    border: 0;
+    outline: 0;
+    background: none;
+}
+#footer {
+    position: absolute;
+    height: 45.1rem;
+    width: 192rem;
+    top: 1130rem;
+    left: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #d9d9d9;
+}
+#f_title {
+    position: absolute;
+    width: 40rem;
+    height: 5rem;
+    left: 45rem;
+    top: 0rem;
+
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    /* identical to box height, or 167% */
+
+    color: #000000;
+}
+.profile {
+    padding-top: 10rem;
+    margin-right: 5rem;
+    width: 26rem;
+    height: 26rem;
+}

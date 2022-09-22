@@ -1,0 +1,78 @@
+{% load static %}
+{% if message %}
+<script>
+    alert("{{ message }}");
+</script>
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="{% static 'css/gallery.css' %}" type="text/css" rel="stylesheet" />
+        <link href="{% static 'css/login.css' %}" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/
+Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans&display=swap"
+        rel="stylesheet" />
+    <title>NFTopia</title>
+        <!--
+    <style>
+     body{
+            background-image: url(https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        }
+         input{
+            margin-top:20px;
+            height: 30px;
+             padding: 12px 20px;
+             width: 150px;
+             margin: 8px 0;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            background-color: rgba(7, 179, 185, 0.753);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+        }
+        button{
+            background-color: rgba(7, 179, 185, 0.753);
+            color: white;
+            width: 150px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+-->
+    </head>
+    <body>
+        <div class="header">
+            <h1>Sign in</h1>
+            <div style="margin-top: 5rem; margin-bottom: 5rem;">
+                <a href="{% url 'home' %}" class="nav" id="a_nftopia">NFTopia</a>
+                <a href="#def_title" class="nav" id="a_def">NFT</a>
+                <a href="#minting_title" class="nav" id="a_minting">Minting</a>
+                <a href="#kindOf_title" class="nav" id="a_kindOf">Kind of</a>
+                <a href="#value_title" class="nav" id="a_value">Value</a>
+                <a href="#howTo_title" class="nav" id="a_howTo">How to?</a>
+                <a href="{% url 'gallery' %}" class="nav" id="a_gallery">Gallery</a>
+                <a href="{% url 'login' %}" class="nav" id="a_login">Sign in</a>
+            </div>
+        <form action="/postsignIn" method="post">
+            {% csrf_token %}
+            <br />
+            <!-- Enter Your Email: -->
+            <section id="login_form">
+            <label for="Email" class="e-mail">Email</label><br>
+            <input type="email" id="Email" name="email" /><br /><br />
+            <!-- Enter Your Password: -->
+            <label for="Password" class="password">Password</label><br>
+            <input type="password" id="Password" name="pass" /><br /><br />
+            <input type="submit" value="Sign In" /><br /><br />
+        </section>
+        </form>
+    </body>
+</html>
