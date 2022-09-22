@@ -152,7 +152,7 @@ Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
                     <div class="row">
                         <a href="{% url 'gallery' %}">
                             <img src="{{ post.photo.url }}" class="col" alt="최신 사진">
-                            <a class="nickname_hover" href="">{{post.nickname}}<br />{{post.date}}</a>
+                            <a class="nickname_hover" href="{% url 'gallery' %}">{{post.nickname}}<br />{{post.date}}</a>
                         </a>
                     </div>
                     {% endfor %}
@@ -165,7 +165,7 @@ Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     </body>
     <footer>
         <div id="footer">
-            <p id="f_title">제 18회 한성공학경진대회 NFTOPIA</p>
+            <div id="f_title">제 18회 한성공학경진대회 NFTOPIA</div>
             <div id="gr">
                 <img src="{% static 'img/giri.png' %}" class="profile">
                 <p>나기리<br>(디지털콘텐츠가상현실/<br>웹 공학트랙 19)</p>

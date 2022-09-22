@@ -662,7 +662,7 @@ span {
 }
 #footer {
     position: absolute;
-    height: 45.1rem;
+    height: 50rem;
     width: 192rem;
     top: 1130rem;
     left: 0rem;
@@ -672,12 +672,31 @@ span {
 
     background-color: #d9d9d9;
 }
+
+.profile {
+    padding-top: 10rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 20rem;
+}
+#footer p {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    /* or 167% */
+
+    text-align: center;
+}
 #f_title {
     position: absolute;
     width: 40rem;
     height: 5rem;
-    left: 45rem;
-    top: 0rem;
+    left: 35rem;
+    top: 2rem;
 
     font-family: "Fira Sans";
     font-style: normal;
@@ -687,10 +706,4 @@ span {
     /* identical to box height, or 167% */
 
     color: #000000;
-}
-.profile {
-    padding-top: 10rem;
-    margin-right: 5rem;
-    width: 26rem;
-    height: 26rem;
 }
